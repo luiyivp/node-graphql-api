@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export async function connect() {
     try {
-        await mongoose.connect('mongodb://192.168.239.128/graphq-db', {
+        await mongoose.connect('mongodb://localhost/graphq-db', {
             useNewUrlParser: true
         });
         console.log('>>> DB is connected');
